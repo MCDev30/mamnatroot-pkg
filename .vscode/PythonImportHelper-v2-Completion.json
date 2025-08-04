@@ -1,0 +1,105 @@
+[
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "Callable",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "MamNatRootSolver",
+        "importPath": "mamnatroot",
+        "description": "mamnatroot",
+        "isExtraImport": true,
+        "detail": "mamnatroot",
+        "documentation": {}
+    },
+    {
+        "label": "MamNatRootSolver",
+        "kind": 6,
+        "importPath": "src.mamnatroot.solver",
+        "description": "src.mamnatroot.solver",
+        "peekOfCode": "class MamNatRootSolver:\n    \"\"\"\n    Implements the hybrid MamNatRoot method for root finding.\n    This class provides only static methods and does not need to be instantiated.\n    \"\"\"\n    @staticmethod\n    def find_all_roots(\n        func: Callable[[float], float],\n        interval: Union[List[float], Tuple[float, float]],\n        depth: int = 12,",
+        "detail": "src.mamnatroot.solver",
+        "documentation": {}
+    },
+    {
+        "label": "f",
+        "kind": 2,
+        "importPath": "example",
+        "description": "example",
+        "peekOfCode": "def f(x):\n    return (x + 3) * (x - 1)\nroots = MamNatRootSolver.find_all_roots(\n    f,\n    interval=[-5, 5],\n    depth=20,  \n    verbose=True,\n    visualize=True\n)\nprint(f\"\\nRésultat final: Racines trouvées = {np.round(roots, 6)}\")",
+        "detail": "example",
+        "documentation": {}
+    },
+    {
+        "label": "roots",
+        "kind": 5,
+        "importPath": "example",
+        "description": "example",
+        "peekOfCode": "roots = MamNatRootSolver.find_all_roots(\n    f,\n    interval=[-5, 5],\n    depth=20,  \n    verbose=True,\n    visualize=True\n)\nprint(f\"\\nRésultat final: Racines trouvées = {np.round(roots, 6)}\")",
+        "detail": "example",
+        "documentation": {}
+    }
+]
