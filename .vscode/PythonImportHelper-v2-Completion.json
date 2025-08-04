@@ -89,7 +89,7 @@
         "kind": 2,
         "importPath": "example",
         "description": "example",
-        "peekOfCode": "def f(x):\n    return (x + 3) * (x - 1)\nroots = MamNatRootSolver.find_all_roots(\n    f,\n    interval=[-5, 5],\n    depth=20,  \n    verbose=True,\n    visualize=True\n)\nprint(f\"\\nRésultat final: Racines trouvées = {np.round(roots, 6)}\")",
+        "peekOfCode": "def f(x):\n    return (x + 3) * (x - 1)**3\nroots = MamNatRootSolver.find_all_roots(\n    f,\n    interval=[-5, 5],\n    depth=20,  \n    verbose=True,\n    visualize=True\n)\nprint(f\"\\nRésultat final: Racines trouvées = {np.round(roots, 6)}\")",
         "detail": "example",
         "documentation": {}
     },

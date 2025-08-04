@@ -3,11 +3,12 @@ name = "mamnatroot"
 version = "0.1.0"
 description = ""
 authors = [
-    {name = "Charbel Mamlankou",email = "charbelzeusmamlankou@gmail.com", name="Eudes Natabou", email="eudesnatabou@gmail.com"}
+    {name = "Charbel Mamlankou", email = "charbelzeusmamlankou@gmail.com"},
+    {name = "Eudes Natabou", email = "eudesnatabou@gmail.com"}
 ]
 license = "MIT"
 readme = "README.md"
-repository = "https://github.com/mamlankou/mamnatroot"
+repository = "https://github.com/MCDev30/mamnatroot-pkg"
 requires-python = ">=3.11"
 dependencies = [
     "numpy (>=2.3.2,<3.0.0)",
@@ -16,7 +17,6 @@ dependencies = [
 
 [tool.poetry]
 packages = [{include = "mamnatroot", from = "src"}]
-
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
